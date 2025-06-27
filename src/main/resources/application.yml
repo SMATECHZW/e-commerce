@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: e-commerce
+  profiles:
+    active: dev
+server:
+  port: 9700
+
+springdoc:
+  api-docs:
+    path: /e-commerce
+  swagger-ui:
+    path: /swagger-ui.html
+payment:
+  url: http://localhost:1400/api/paynow/pay
+notification:
+  url: http://localhost:6800/api/notifications/email/send

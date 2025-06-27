@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://host.docker.internal:3306/smartech_ecommerce?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Africa/Harare
+    #url: jdbc:mysql://localhost:3306/smartech_ecommerce?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Africa/Harare
+    username: smatech
+    password: smatech@2025
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    open-in-view: false
